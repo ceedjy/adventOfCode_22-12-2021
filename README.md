@@ -23,11 +23,11 @@ go run .
 Vous trouverez comme résultat dans le terminal un résultat tel que celui ci : 
 ```
 partie 1:
-570915
+570815
 partie 2:
-1268313839428137
+1268312839438137
 ```
-Vous trouverez donc le résultat pour la première partie et la deuxième partie du problème. 
+Vous trouverez donc le résultat pour la première partie et la deuxième partie du problème. </br>
 
 3. Lancer le benchmark 
 Pour lancer le benchmark lié au programme, lancez la commande 
@@ -44,6 +44,7 @@ Dans la première partie, le principe est d'utiliser une matrice à trois dimens
 Dans la deuxième partie, le principe est d'ajouter des pavés et notamment des intersections de pavés dans un tableau pour pouvoir par la suite ajouter ou enlever les valeurs des pavés 'vues' pour compter combien d'interrupteurs sont à 'on' à la fin. </br>
 
 1. Partie 1 
+```
 Ouvrir le fichier de l'input 
 Création d'une matrice à 3 dimensions de booléen 
 Initialisation de cette matrice : 
@@ -63,8 +64,10 @@ Pour chaque ligne de cet input faire :
 récupérer le nombre de cases dasn la matrice qui sont a vrai : 
     Pour chaque case de cette matrice, augmenter un compteur si la valeur de cette case est vrai 
 Retourner ce nombre </br>
+```
 
 2. Partie 2
+```
 Ouvrir le fichier de l'input 
 Création d'un tableau de Pave (structure avec les coordonnées minimum et maximum en x, y et z, et un booléen qui permet de savoir si le pavé met ses valeurs à 'on' (vrai) ou à 'off' (faux))
 Pour chaque ligne de cet input faire : 
@@ -96,3 +99,4 @@ Compter le nombre de valeurs dans les pavés qui sont à vrai :
         Sinon faire : 
             enlever au compteur le volume du pavé (longuer * largeur * hauteur)
 Retourner ce nombre
+```
