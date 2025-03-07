@@ -1,7 +1,7 @@
 Présentation
 ------------
 Ce projet fait parti du cours d'INFO601 de l'Université Savoie Mont Blanc. </br>
-Le but est de résoudre le problème du site [Advent of Code du 22/12/2021](https://adventofcode.com/2021/day/22). 
+Le but est de résoudre le problème du site [Advent of Code du 22/12/2021](https://adventofcode.com/2021/day/22). </br>
 Tuteurs : Pierre Hyvernat et Valentin Gledel
 
 Prérequis
