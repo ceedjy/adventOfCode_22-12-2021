@@ -11,12 +11,12 @@ Prérequis
 
 Utilisation
 ------------
-1. Modifier l'input
+1. Modifier l'input </br>
 Pour lancer le code qui vous donnera la réponse au problème, il vous faut tout d'abord modifier le nom du fichier de votre input. </br>
 Pour cela, ouvrez le fichier 'adventCode.go' et modifiez la variable 'filename' à la ligne 11 pour renseigner le nom et le chemin de votre fichier d'input. </br>
 
-2. Lancer le programme 
-Pour lancer le programme, ouvrer un terminal, allez dans le dossier contenant tous les fichiers de ce dépot et lancez la commande 
+2. Lancer le programme </br>
+Pour lancer le programme, ouvrez un terminal, allez dans le dossier contenant tous les fichiers de ce dépot et lancez la commande 
 ```
 go run .
 ```
@@ -29,7 +29,7 @@ partie 2:
 ```
 Vous trouverez donc le résultat pour la première partie et la deuxième partie du problème. </br>
 
-3. Lancer le benchmark 
+3. Lancer le benchmark </br>
 Pour lancer le benchmark lié au programme, lancez la commande 
 ```
 go test -bench=Part
@@ -38,9 +38,9 @@ Vous trouverez en résultat le nombre de fois que les tests ont été effctué, 
 
 Explication du code
 ------------
-Dans cette partie voous trouverez plus d'explications à propos du fonctionnement de l'algorithme en lui même. </br>
+Dans cette partie vous trouverez plus d'explications à propos du fonctionnement de l'algorithme en lui même. </br>
 Le code est ici expliqué en langage naturel. </br>
-Dans la première partie, le principe est d'utiliser une matrice à trois dimensions pour représenter le réactor de -50 à 50 en x, en y et en z. </br>
+Dans la première partie, le principe est d'utiliser une matrice à trois dimensions pour représenter le réacteur de -50 à 50 en x, en y et en z. </br>
 Dans la deuxième partie, le principe est d'ajouter des pavés et notamment des intersections de pavés dans un tableau pour pouvoir par la suite ajouter ou enlever les valeurs des pavés 'vues' pour compter combien d'interrupteurs sont à 'on' à la fin. </br>
 
 1. Partie 1 
@@ -61,9 +61,9 @@ Pour chaque ligne de cet input faire :
                         associer la valeur de la matrice en (x,y,z) à faux
                     Sinon faire :
                         associer la valeur de la matrice en (x,y,z) à vrai
-récupérer le nombre de cases dasn la matrice qui sont a vrai : 
+récupérer le nombre de cases dans la matrice qui sont à vrai : 
     Pour chaque case de cette matrice, augmenter un compteur si la valeur de cette case est vrai 
-Retourner ce nombre </br>
+Retourner ce nombre
 ```
 
 2. Partie 2
@@ -86,14 +86,14 @@ Pour chaque ligne de cet input faire :
                 récupérer la plus petite valeur des maximums en x, y et z de ces deux pavés et associer ces valeurs au nouveau pavé
                 associer la valeur de ce nouveau pavé à l'inverse de la valeur du pavé du tableau de pavé 
             Sinon faire : 
-                créer un pavé impossible pour avoir un pavé dit 'null'    
+                créer un pavé impossible pour avoir un pavé dit 'null' (intersection inexistante) 
         Si le nouveau pavé n'est pas le pavé impossible alors faire : 
             ajouter au tableau de pavé le nouveau pavé 
     Si le mot est 'on' alors faire : 
         ajouter au tableau de pavé le pavé lut 
 Compter le nombre de valeurs dans les pavés qui sont à vrai : 
     Initialiser le compteur à 0
-    Pour chaque pavé dans la tableau de pavé faire : 
+    Pour chaque pavé dans le tableau de pavé faire : 
         Si la valeur du pavé est à vrai alors faire : 
             ajouter au compteur le volume du pavé (longuer * largeur * hauteur)
         Sinon faire : 
